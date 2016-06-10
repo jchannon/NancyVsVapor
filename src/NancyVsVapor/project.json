@@ -1,0 +1,33 @@
+﻿{
+    "version": "1.0.0-*",
+    "buildOptions": {
+        "emitEntryPoint": true,
+        "copyToOutput": [ "test.sqlite" ]
+    },
+    "publishOptions": {
+        "includeFiles": [ "test.sqlite" ]
+    },
+    "dependencies": {
+        "Microsoft.NETCore.App": {
+            "type": "platform",
+            "version": "1.0.0-rc2-3002702"
+        }
+    },
+
+    "frameworks": {
+        "netcoreapp1.0": {
+            "dependencies": {
+                "Microsoft.AspNetCore.Hosting": "1.0.0-rc2-final",
+                "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final",
+                "Microsoft.AspNetCore.Owin": "1.0.0-rc2-final",
+                "Nancy": "2.0.0-coreclr",
+                "Microsoft.Data.SQLite": "1.0.0-rc2-final",
+                "Dapper": "1.50.0-rc2b"
+            },
+            "imports": [
+                "dotnet54",
+                "portable-net451+win8"
+            ]
+        }
+    }
+}
